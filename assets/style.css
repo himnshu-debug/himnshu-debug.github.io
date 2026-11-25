@@ -200,3 +200,16 @@ main h3 + .photos { margin-top: 4px; }
 .lb-x { top: 8px; right: 12px; }
 .lb-p { left: 6px; top: 50%; transform: translateY(-50%); }
 .lb-n { right: 6px; top: 50%; transform: translateY(-50%); }
+
+/* ---------- gallery v2: albums + section chips ---------- */
+.chips { list-style: none; padding: 0; margin: 14px 0 6px; display: flex; flex-wrap: wrap; gap: 8px; }
+.chips a {
+  display: inline-block; font-family: system-ui, sans-serif; font-size: 14px; color: var(--text);
+  border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; background: #fff;
+}
+.chips a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+section[id] { scroll-margin-top: 72px; }
+.album { margin: 0 0 22px; }
+.album-cap { font-family: system-ui, sans-serif; font-size: 15px; font-weight: 600; margin: 0 0 8px; color: var(--text); }
+.photos.single { grid-template-columns: minmax(0, 520px); }
+.photos.single a.ph { aspect-ratio: 16 / 10; }
